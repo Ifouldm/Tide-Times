@@ -1,15 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:tide_time/utils/data_collector.dart';
 import 'package:tide_time/utils/helper_functions.dart';
 import 'package:tide_time/widgets/tide_card.dart';
 
+import 'models/tide_data.dart';
 import 'widgets/header_cards.dart';
 import 'widgets/next_tide_card.dart';
-import 'models/tide_data.dart';
 import 'widgets/waves.dart';
 
-void main() {
+// void main() {
+//   runApp(MyApp());
+// }
+
+Future main() async {
+  await DotEnv().load('.env');
   runApp(MyApp());
 }
 
@@ -30,6 +36,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   final String title;
+
   MyHomePage({this.title});
 
   @override

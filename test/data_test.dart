@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:tide_time/utils/data_collector.dart';
 import 'package:tide_time/models/tide_data.dart';
+import 'package:tide_time/utils/data_collector.dart';
 
 void main() {
   testWidgets('Data tests', (WidgetTester tester) async {

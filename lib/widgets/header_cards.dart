@@ -4,7 +4,9 @@ import '../utils/helper_functions.dart';
 
 class HeaderCards extends StatelessWidget {
   final tideData;
+
   HeaderCards({@required this.tideData});
+
   @override
   Widget build(BuildContext context) {
     return Column(

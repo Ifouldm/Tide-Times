@@ -5,6 +5,7 @@ import '../utils/helper_functions.dart';
 
 class NextTideCard extends StatelessWidget {
   final TideData tideData;
+
   NextTideCard({@required this.tideData});
 
   @override

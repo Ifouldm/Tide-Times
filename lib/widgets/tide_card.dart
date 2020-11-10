@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../utils/helper_functions.dart';
 import '../models/tide_data.dart';
+import '../utils/helper_functions.dart';
 
 class TideCard extends StatelessWidget {
   final int index;

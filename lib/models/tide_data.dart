@@ -4,6 +4,7 @@ class TideData {
   final String units;
 
   Duration avgTimeBetweenTides = Duration(hours: 12);
+
   TideData({this.lastFetched, this.extremes, this.units = 'm'}) {
     extremes
         .removeWhere((extreme) => extreme.dateTime.isBefore(DateTime.now()));
@@ -50,6 +51,7 @@ class Extreme {
   final DateTime dateTime;
   final double height;
   final TideState state;
+
   Extreme({this.dateTime, this.height = 0, this.state = TideState.LowTide});
 
   // Factory to parse data from Json to Extreme objects
